@@ -1,0 +1,46 @@
+
+* {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 6.5em;
+  position: relative;
+  background: rgba(250, 250, 250, 1);
+}
+
+header li {
+  display: inline-block;
+  position: relative;
+  padding: 3px;
+  margin: 2.5em;
+  float: right;
+}
+
+header img {
+  width: 4em;
+  border-radius: 0.5em;
+}
+
+.header-button {
+  background: white;
+  border-radius: 2px;
+}
+
+#player-pic {
+  margin: 1em;
+}
+
+#logo {
+  position: absolute;
+  float: left;
+  padding: 0;
+  margin: 0 0 0 3% ;
+  top: 50%;
+  transform: translateY(-40%);
+  }
+
+#logo img {
+  width: 50%;
+}

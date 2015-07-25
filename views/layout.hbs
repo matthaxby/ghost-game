@@ -5,6 +5,32 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <header>
+      {{#if user}}
+      <nav>
+        <ul>
+          <li id="logo">
+            <img src="/images/ghost-logo.svg" alt="">
+          </li>
+          <li class="header-button"><a href="/users/logout">Logout</a></li>
+          <li>{{user.displayName}}</li>
+          <li id="player-pic"><img src="{{user._json.image.url}}" alt=""></li>
+        </ul>
+      </nav>
+    {{else}}
+      <nav>
+        <ul>
+          <li id="logo">
+            <img src="/images/ghost-logo.svg" alt="">
+          </li>
+          <li class="header-button"><a href="/auth/google">Login</a></li>
+        </ul>
+      </nav>
+    {{/if}}
+    </header>
+
+
     {{{body}}}
+    <script src='/javascripts/client.js'></script>
   </body>
 </html>

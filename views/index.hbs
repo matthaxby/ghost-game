@@ -1,2 +1,6 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{#if user}}
+<a href="/games">PLAY!</a>
+{{else}}
+<div class="intro-one"></div>
+<div class="intro-two"></div>
+{{/if}}
