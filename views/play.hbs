@@ -4,12 +4,12 @@
 <ul class="word-list">
   <li>You could have gone for:</li>
   {{#each couldBe}}
-    <li><a href="http://www.thefreedictionary.com//{{this}}">{{this}}</a></li>
+    <li><a href="http://www.thefreedictionary.com/{{this}}">{{this}}</a></li>
   {{/each}}
 </ul>
 {{else if darn}}
 
-<h1 class="fail">Sorry, <a href="http://www.thefreedictionary.com//{{darn}}" + {{darn}}>{{darn}}</a> is a word</h1>
+<h1 class="fail">Sorry, <a href="http://www.thefreedictionary.com/{{darn}}">{{darn}}</a> is a word</h1>
 <a href="/play" class="fail">Play again?</a>
 {{else}}
 <article class="play-main">
