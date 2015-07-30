@@ -6,12 +6,7 @@ router.get('/', function(req, res){
   res.render('index', { user: req.user });
 });
 
-router.get('/account', ensureAuthenticated, function(req, res){
-  res.render('account', { user: req.user });
-});
-
 router.get('/login', function(req, res){
-  console.log(req)
   res.render('login', { user: req.user });
 });
 

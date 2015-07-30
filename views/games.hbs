@@ -1,4 +1,8 @@
-<form action="/games" method="post">
-  <input type="text" name="word">
-  <input type="submit" value="TEST">
+<h1>Current Games</h1>
+{{#games}}
+<h2>{{player}}</h2>
+{{/games}}
+
+<form  action="/games/{{user.id}}" method="post">
+  <input type="submit" value="Create New Game">
 </form>

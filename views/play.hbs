@@ -1,0 +1,30 @@
+{{#if damn}}
+<h1 class="fail">Sorry, {{damn}} can't be a word</h1>
+<a href="/play" class="fail">Play again?</a>
+<ul class="word-list">
+  <li>You could have gone for:</li>
+  {{#each couldBe}}
+    <li><a href="http://www.thefreedictionary.com//{{this}}">{{this}}</a></li>
+  {{/each}}
+</ul>
+{{else if darn}}
+
+<h1 class="fail">Sorry, <a href="http://www.thefreedictionary.com//{{darn}}" + {{darn}}>{{darn}}</a> is a word</h1>
+<a href="/play" class="fail">Play again?</a>
+{{else}}
+<article class="play-main">
+  <form class="play-form-one" action="/play" method="post">
+    <input class="new-letter" type="text" name="front" maxlength="1" placeholder="?">
+    <input class="play-submit" type="submit" value="+">
+  </form>
+  {{# if games.word}}
+  <div class="current-word">{{games.word}}</div>
+    <form class="play-form-two" action="/play" method="post">
+      <input class="new-letter" type="text" name="back" maxlength="1" placeholder="?">
+      <input class="play-submit" type="submit" value="+">
+    </form>
+  </article>
+  {{else}}
+  <div class="current-word" style="color: gray">add a letter</div>
+  {{/if}}
+{{/if}}

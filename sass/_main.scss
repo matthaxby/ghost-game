@@ -6,14 +6,26 @@ a {
   color: #00B7FF;
 }
 
-/* .intro-one, .intro-two {
+article {
+  width: 100%;
+  margin-top: 10em;
+  margin-left: 20%;
+}
+
+.intro-one, .intro-two {
   display: inline-block;
   float: left;
   font-size: 100px;
-  height: 10em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro-two {
   color: gray;
 }
- */
+
+.play-button {
+  display: block;
+  margin: 1em;
+  font-size: 100px;
+}

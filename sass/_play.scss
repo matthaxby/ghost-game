@@ -1,0 +1,45 @@
+.current-word {
+  font-size: 80px;
+  float: left;
+}
+
+.fail {
+  margin: 1em;
+  font-size: 60px;
+}
+
+.play-main {
+  margin-top: 10em;
+}
+
+.play-form-one, .play-form-two {
+  display: inline-block;
+  float: left;
+}
+
+.new-letter {
+  width: 80px;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 80px;
+  display: block;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.word-list {
+  margin-top: 4%;
+  margin-left: 10%;
+}
+
+.play-submit {
+  display: none;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 4em;
+  background: rgba(50, 221, 133, 1);
+  margin-top: 10px;
+}

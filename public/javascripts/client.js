@@ -1,10 +1,10 @@
 var introOne = document.querySelector('.intro-one')
 var introTwo = document.querySelector('.intro-two')
+var login = document.querySelector('.login')
 
-arrOne = ['g', 'gh', 'gho', 'ghos']
-arrTwo = ['', '','', 'able', 'loat', 'ladly', 'astronic', 'ee', 'ee', 'etto', 'etto', 'ul', 'ul', 'ul', 'ul', 't', 't',]
+arrOne = ['W', 'We', 'Wel', 'Welc']
+arrTwo = ['', '', '', 'alk', 'illow', 'isteria', 'estern', 'aver', 'epy', 'ir', 'lt', 'ders', 'l', 'ling', 'ch', 'hes', 'ome']
 
-console.log(introOne)
 if (introOne) {
   var indexOne = 0
   var indexTwo = 0
@@ -21,6 +21,7 @@ if (introOne) {
       introTwo.innerHTML = arrTwo[indexTwo]
       indexTwo++
     } else {
+      introTwo.style.color = 'black'
       clearInterval()
     }
   }, 100)

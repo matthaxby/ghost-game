@@ -8,6 +8,7 @@ header {
   height: 6.5em;
   position: relative;
   background: rgba(250, 250, 250, 1);
+  border-bottom: 1px solid rgba(200, 200, 200, 1);
 }
 
 header li {
@@ -21,11 +22,6 @@ header li {
 header img {
   width: 4em;
   border-radius: 0.5em;
-}
-
-.header-button {
-  background: white;
-  border-radius: 2px;
 }
 
 #player-pic {
