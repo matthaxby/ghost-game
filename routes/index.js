@@ -12,6 +12,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { user: req.user })
 });
 
+
+
 router.get('/games/:id', function(req, res, next) {
   if (req.isAuthenticated()) {
     console.log(req.user.id)
@@ -55,7 +57,10 @@ router.post('/play', function(req, res, next) {
 
 router.get('/play', function(req, res, next) {
   games.findOne({player: req.user.id}, function(err, doc) {
-    console.log(doc.word)
+    if (!doc) {
+      console.log('a')
+      games.insert({player: req.user.id})
+    }
     res.render('play', {user: req.user, games: doc})
   })
 })
