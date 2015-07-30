@@ -3,7 +3,12 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: rgba(121, 121, 121, 1);
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: black;
 }
 
 article {

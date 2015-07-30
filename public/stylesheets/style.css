@@ -48,7 +48,11 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #797979;
+  transition: color 0.25s; }
+
+a:hover {
+  color: black; }
 
 article {
   width: 100%;
@@ -83,13 +87,24 @@ header {
 header li {
   display: inline-block;
   position: relative;
-  padding: 3px;
+  padding: 2px;
   margin: 2.5em;
   float: right; }
+
+span {
+  font-size: 18px; }
 
 header img {
   width: 4em;
   border-radius: 0.5em; }
+
+.header-button a {
+  font-size: 18px;
+  color: #959595;
+  transition: color 0.5s; }
+
+.header-button a:hover {
+  color: black; }
 
 #player-pic {
   margin: 1em; }
