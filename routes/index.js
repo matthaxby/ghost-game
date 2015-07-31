@@ -37,7 +37,7 @@ router.get('/play', function(req, res, next) {
     if (!doc) {
       games.insert({player: req.user.id, word: ''})
     }
-    res.rendxer('play', {user: req.user, games: doc})
+    res.render('play', {user: req.user, games: doc})
   })
 })
 
