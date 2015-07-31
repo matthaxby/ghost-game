@@ -14,13 +14,13 @@
 {{else}}
 <article class="play-main">
   <form class="play-form-one" action="/play" method="post">
-    <input class="new-letter" type="text" name="front" maxlength="1" placeholder="?">
+    <input class="new-letter" autocomplete="off" type="text" name="front" maxlength="1" placeholder="?">
     <input class="play-submit" type="submit" value="+">
   </form>
   {{# if games.word}}
   <div class="current-word">{{games.word}}</div>
     <form class="play-form-two" action="/play" method="post">
-      <input class="new-letter" type="text" name="back" maxlength="1" placeholder="?">
+      <input class="new-letter" autocomplete="off" type="text" name="back" maxlength="1" placeholder="?">
       <input class="play-submit" type="submit" value="+">
     </form>
   </article>

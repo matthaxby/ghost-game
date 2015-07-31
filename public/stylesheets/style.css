@@ -94,9 +94,12 @@ header li {
 span {
   font-size: 18px; }
 
-header img {
+.profile-pic {
   width: 4em;
-  border-radius: 0.5em; }
+  border-radius: 0.4em;
+  border: 1px solid #a8a8a8;
+  -webkit-filter: grayscale(75%);
+  filter: grayscale(75%); }
 
 .header-button a {
   font-size: 18px;

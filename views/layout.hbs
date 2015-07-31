@@ -10,11 +10,11 @@
       <nav>
         <ul>
           <li id="logo">
-            <img src="/images/ghost-logo.svg" alt="">
+            <img id="logo-img" src="/images/ghost-logo.svg" alt="">
           </li>
           <li class="header-button"><a href="/users/logout">Logout</a></li>
           <li><span>{{user.displayName}}</span></li>
-          <li id="player-pic"><img src="{{user._json.image.url}}" alt=""></li>
+          <li id="player-pic"><img class="profile-pic" src="{{user._json.image.url}}" alt=""></li>
           <li class="header-button"><a href="/instructions">How to Play</a></li>
         </ul>
       </nav>
