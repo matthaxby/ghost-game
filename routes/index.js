@@ -5,7 +5,6 @@ var db = require('monk')(process.env.MONGOLAB_URI)
 var games = db.get('games')
 
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { user: req.user })
 });
@@ -17,7 +16,6 @@ router.post('/play', function(req, res, next) {
     } else {
       var newWord = doc.word + req.body.back.toLowerCase()
     }
-    console.log(newWord)
     if (game.checker(newWord) === 'nope') {
       var coulda = game.possible(doc.word)
       games.update({player: req.user.id}, {player: req.user.id, word: ''})
